@@ -3,7 +3,7 @@ name: Python webapp Workflow
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   run-python-script:
