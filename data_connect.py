@@ -27,7 +27,7 @@ pool = sqlalchemy.create_engine(
 
 with pool.connect() as db_conn:
     # query database and fetch results
-    results = db_conn.execute(sqlalchemy.text("SELECT * FROM Persons LIMIT 10;")).fetchall()
+    results = db_conn.execute(sqlalchemy.text("SELECT * FROM Persons LIMIT 5;")).fetchall()
 
     # show results
     for row in results:
