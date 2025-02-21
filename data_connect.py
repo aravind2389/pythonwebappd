@@ -31,6 +31,6 @@ with pool.connect() as db_conn:
 
     # show results
     for row in results:
-        print(row[2:6])
+        print(row[3:5])
 
 db_conn.close()
